@@ -1,0 +1,37 @@
+{
+  "name": "tiny-mean-cms",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Jerome BEHUET",
+  "license": "MIT",
+  "main": "server.js",
+  "scripts": {
+    "install": "node install.js",
+    "postinstall": "bower install && brunch build --production",
+    "prestart": "brunch build --production",
+    "start": "node tiny-mean-cms.js",
+    "dev": "brunch watch --server"
+  },
+  "dependencies": {
+    "angularjs-templates-brunch": "^1.0.0",
+    "auto-reload-brunch": "^2.7.1",
+    "babel-brunch": "^6.0.6",
+    "body-parser": "^1.14.1",
+    "bower": "^1.7.9",
+    "brunch": "^2.8.2",
+    "clean-css-brunch": "^2.0.0",
+    "copycat-brunch": "^1.1.0",
+    "css-brunch": "^2.6.1",
+    "express": "^4.13.3",
+    "javascript-brunch": "^2.0.0",
+    "json-concat-brunch": "^1.1.0",
+    "jsonwebtoken": "^5.7.0",
+    "method-override": "^2.3.5",
+    "mongoose": "^4.2.6",
+    "morgan": "^1.6.1",
+    "node-phantom": "^0.2.5",
+    "phantom": "^2.1.21",
+    "sass-brunch": "^2.6.3",
+    "uglify-js-brunch": "^2.0.1"
+  }
+}
