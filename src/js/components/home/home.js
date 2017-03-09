@@ -2,7 +2,7 @@
     'use strict'
     app.component("home", {
         templateUrl: 'js/components/home/home.html',
-        controller: ['UserService', 'PageService', '$state', function(UserService, PageService, $state) {
+        controller: ['UserService', 'PageService', '$state', 'ngMeta', function(UserService, PageService, $state, ngMeta) {
             angular.extend(this, {
                 editMode: false,
                 cancel(){
@@ -32,6 +32,9 @@
                       console.log(err)
                     })
 
+                    ngMeta.setTitle('Vibe sharing | Home'); //Title = Eluvium | Spotify
+                    ngMeta.setTag('author', 'Hadrien Buret');
+                    ngMeta.setTag('image', 'img/logo_vibesharing.png');
                 }
             })
         }]

@@ -29,6 +29,7 @@
     "method-override": "^2.3.5",
     "mongoose": "^4.2.6",
     "morgan": "^1.6.1",
+    "ng-meta": "^1.0.0",
     "node-phantom": "^0.2.5",
     "phantom": "^2.1.21",
     "sass-brunch": "^2.6.3",

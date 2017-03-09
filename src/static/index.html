@@ -15,16 +15,24 @@
     <meta charset="utf-8">
     <meta name="fragment" content="!">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="description" content="Vibesharing, when Bike touring, yoga, computer science, and great encounters occur together">
-    <meta name="author" content="Hadrien Buret">
-    <link rel="icon" type="image/png" href="" />
-    <title>Vibe Sharing</title>
+
+    <!-- ngMeta -->
+    <title ng-bind="ngMeta.title"></title>
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_FR" />
+    <meta property="og:site_name" content="vibesharing" />
+
+    <meta name="author" content="{{ngMeta['author']}}" />
+    <meta name="description" content="{{ngMeta.description}}" />
+    <meta name="image" content="{{ngMeta.image}}" / />
+
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/ite.css">
     <link rel="stylesheet" href="css/vendor.min.css">
     <link rel="stylesheet" href="css/app.min.css">
+
 
 </head>
 
@@ -53,5 +61,8 @@
 <script src="js/vendor.min.js"></script>
 <script src="js/templates.js"></script>
 <script src="js/app.min.js"></script>
+  <!-- Script cdn-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ng-meta/0.3.9/ngMeta.min.js"></script>
+
 
 </html>

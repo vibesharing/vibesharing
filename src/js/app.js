@@ -45,6 +45,7 @@
 
 })(angular.module('app', [
     'ui.router',
+    'ngMeta',
     'ngCookies',
     'ngSanitize',
     'angular-md5',
