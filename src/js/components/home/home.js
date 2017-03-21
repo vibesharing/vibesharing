@@ -2,7 +2,7 @@
     'use strict'
     app.component("home", {
         templateUrl: 'js/components/home/home.html',
-        controller: ['UserService', 'PageService', '$state', 'ngMeta', function(UserService, PageService, $state, ngMeta) {
+        controller: ['UserService', 'PageService', 'FacebookService','$state', 'ngMeta', 'SlackService',  function(UserService, PageService, FacebookService, $state, ngMeta, SlackService) {
             angular.extend(this, {
                 editMode: false,
                 cancel(){
@@ -20,9 +20,7 @@
                 $onInit() {
                     UserService.getCurrent().then((user) => {
                         this.user = user
-                    }).catch((err) => {
-
-                    })
+                    }).catch((err) => {})
 
                     PageService.get('home').then((res) => {
                       this.page = res.data
@@ -31,8 +29,18 @@
                     }).catch((err) =>{
                       console.log(err)
                     })
+                    console.log('call')
 
-                    ngMeta.setTitle('Vibe sharing | Home'); //Title = Eluvium | Spotify
+                    FacebookService.getFeeds(3).then((res) => {
+                        res.data.data.forEach((el)=> {
+                            FacebookService.getInfos(el.id).then((res) => {
+                            });
+                        });
+                    })
+
+                    SlackService.postMessage('$general', 'helloworld')
+
+                    ngMeta.setTitle('Vibe sharing | Home');
                     ngMeta.setTag('author', 'Hadrien Buret');
                     ngMeta.setTag('image', 'img/logo_vibesharing.png');
                 }
