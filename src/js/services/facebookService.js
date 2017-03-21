@@ -20,7 +20,7 @@
         getInfos(id) {
             var req = {
                 method: 'GET',
-                url: 'https://graph.facebook.com/v2.8/'+id+'?fields=full_picture,picture,attachments',
+                url: 'https://graph.facebook.com/v2.8/'+id+'?fields=picture,message,full_picture,created_time,place,link',
                 headers: {
                     'Authorization': 'OAuth EAANUp5iVRqYBACQMnpM42NjiiY3lSG06RRVzawlADOgvtqwFOqVa7u3fZCsnpMW6vglpKGBEc9JQSOsJuP9GYZCCDKcoObUAzyRsMllnDXstWWZBlUQJ7t8abK3X5lHKmshdBRrVGsSrkFLmvkjqvuIuipdW6otfpdONpPCDwZDZD'
                 }

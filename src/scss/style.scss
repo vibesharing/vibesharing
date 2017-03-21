@@ -91,7 +91,7 @@ input[type=checkbox].css-checkbox:checked+ label.css-label {
     background-image: url('../img/checkbox.png');
 }
 /* floating button */
-.btn-floating {
+.btn-floating-custom {
     color: $white;
     z-index: 1;
     width: 37px;
@@ -116,8 +116,8 @@ input[type=checkbox].css-checkbox:checked+ label.css-label {
     bottom: 55px;
 }
 /* buttons */
-.btn,
-.btn:focus {
+.btn-custom,
+.btn-custom:focus {
     background-color: $primary;
     color: $white;
     text-shadow: none;

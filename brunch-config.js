@@ -9,6 +9,8 @@ exports.config = {
             joinTo: {
                 'js/vendor.min.js': [
                     'bower_components/jquery/dist/jquery.js',
+                    'src/dist/jquery-3.1.1.min.js',
+                    'src/dist/tether.js',
                     'bower_components/bootstrap/dist/js/bootstrap.js',
                     'bower_components/toastr/toastr.js',
                     'bower_components/rangy/*.js',
@@ -22,9 +24,11 @@ exports.config = {
                     'bower_components/textAngular/dist/textAngularSetup.js',
                     'bower_components/textAngular/dist/textAngular.js',
                     'bower_components/angular-translate/angular-translate.js',
-                    'bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js'
+                    'bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js',
+                    'bower_components/ngMeta/dist/ngMeta.js'
                 ],
-                'js/app.min.js': /^src\/js/
+                'js/app.min.js': /^src\/js/,
+                'js/components.js': /^src\/dist\/components/
             },
             order: {
                 before: [
@@ -72,6 +76,7 @@ exports.config = {
         copycat: {
             "css": ["bower_components/bootstrap/dist/css/bootstrap.min.css", "bower_components/bootstrap/dist/css/bootstrap.min.css.map", "bower_components/angular-inline-text-editor/ite.css"],
             "fonts": "bower_components/font-awesome/fonts",
+            "fonts-families/roboto": ["src/font/roboto/"],
             verbose: true,
             onlyChanged: true
         },

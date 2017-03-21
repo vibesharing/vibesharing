@@ -22,3 +22,24 @@
 .concepts {
     margin-top: 20px;
 }
+
+.controls-top {
+  // display: none;
+}
+
+@media screen and (max-width: 640px) {
+  .first-posts {
+  }
+
+  .not-first-posts {
+    display: none;
+  }
+}
+.post-title {
+  padding: 10px 20px 0px 20px;;
+}
+
+.post-message {
+  padding: 20px;
+  max-height: 150px;
+}
