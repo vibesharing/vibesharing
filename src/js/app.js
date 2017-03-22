@@ -41,7 +41,7 @@
 
     app.directive('checkPassword', checkPassword)
     app.directive('gravatar', gravatar)
-    
+
     app.filter("cut", function(){
         return function (value, wordwise, max, tail) {
                 if (!value) return '';
