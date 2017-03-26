@@ -1,0 +1,38 @@
+<section>
+    <!--Card-->
+    <div class="card col-md-4 col-sm-8 col-no-padding">
+        <!--Card image-->
+        <div class="view overlay hm-white-slight">
+            <img ng-src="{{$ctrl.story.better_featured_image.source_url}}" class="img-fluid" alt="{{$ctrl.story.better_featured_image.alt_text}}">
+            <a><div class="mask waves-effect waves-light"></div></a>
+        </div>
+        <!--/.Card image-->
+        <!--Social buttons-->
+        <div class="card-share card-share-custom">
+            <div class="social-reveal">
+                <!--Facebook-->
+                <a type="button" class="btn-floating btn-fb"><i class="fa fa-facebook"></i></a>
+                <!--Twitter-->
+                <a type="button" class="btn-floating btn-tw"><i class="fa fa-twitter"></i></a>
+                <!--Google -->
+                <a type="button" class="btn-floating btn-gplus"><i class="fa fa-google-plus"></i></a>
+            </div>
+            <a class="btn-floating btn-action share-toggle primary-color-dark float-right btn-action-custom"><i class="fa fa-share-alt"></i></a>
+        </div>
+        <!--/Social buttons-->
+        <!--Card content-->
+        <div class="card-block">
+            <!--Title-->
+            <h4 class="card-title">{{$ctrl.story.title.rendered}}</h4>
+            <hr>
+            <!--Text-->
+            <p class="card-text">{{$ctrl.story.content.rendered | keep}}</p>
+            <div class="text-center">
+                <a class="btn btn-primary">{{'READ_MORE' | translate}} </a>
+            </div>
+        </div>
+        <!--/.Card content-->
+    </div>
+    <!--/.Card-->
+
+</section>

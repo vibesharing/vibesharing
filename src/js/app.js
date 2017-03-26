@@ -63,13 +63,20 @@
                 }
                 return value + (tail || ' …');
             };
-    })
+    }),
+
+    app.filter("keep", function(){
+        return function (value) {
+          var match = value.match(/<h1>(.*)<\/h1>/);
+          return match[1];
+            };
+    }),
 
     app.run()
 
 })(angular.module('app', [
     'ui.router',
-      'ngMap',
+     'ngMap',
     'ngMeta',
     'ngCookies',
     'ngSanitize',

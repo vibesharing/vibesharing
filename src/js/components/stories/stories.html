@@ -1,4 +1,39 @@
-<div class="">
-  <h1>Stories</h1>
+<section>
+    <div class="container">
+        <div class="row" ng-repeat="story in $ctrl.stories">
+          <story story="story" class="" />
+        </div>
+    </div>
+</section>
 
-</div>
+<style media="screen">
+
+    .card-block {
+        padding: 10px;
+    }
+
+    .card-share-custom {
+        text-align: right;
+    }
+    .col-no-padding {
+        padding: 0;
+    }
+
+    .btn-action-custom {
+        top: -10px;
+        right: 15px;
+        margin: -23px 0px !important;
+    }
+</style>
+<script type="text/javascript">
+setTimeout(function(){
+    console.log('helo')
+    $('.card-share > a').on('click', function (e) {
+        console.log('hello');
+        e.preventDefault() // prevent default action - hash doesn't appear in url
+        $(this).parent().find('div').toggleClass('social-reveal-active');
+        $(this).toggleClass('share-expanded');
+    });
+}, 4000);
+
+</script>
