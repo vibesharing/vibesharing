@@ -3,7 +3,7 @@
 let phantom = require('phantom')
 
 module.exports = (req, res, next) => {
-  
+
     let phInstance, sitepage
     if (!req.query._escaped_fragment_) {
         next()
@@ -24,6 +24,7 @@ module.exports = (req, res, next) => {
             .then(content => {
                 sitepage.close();
                 phInstance.exit();
+                console.log(content);
                 res.send(content);
             })
             .catch(error => {
