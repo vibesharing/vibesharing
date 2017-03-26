@@ -85,6 +85,7 @@
     'app.home',
     'app.blog',
     'app.about',
+    'app.stories',
     'app.dashboard',
     'app.dashboard.summary',
     'app.dashboard.users',
