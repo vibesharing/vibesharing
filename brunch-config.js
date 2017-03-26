@@ -26,8 +26,7 @@ exports.config = {
                     'bower_components/angular-translate/angular-translate.js',
                     'bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js',
                     'bower_components/ngMeta/dist/ngMeta.js',
-                    'bower_components/photoswipe/dist/photoswipe.js',
-                    'bower_components/photoswipe/dist/photoswipe-ui-default.js'
+                    'bower_components/ngmap/build/scripts/ng-map.js'
                 ],
                 'js/app.min.js': /^src\/js/,
                 'js/components.js': /^src\/dist\/components/

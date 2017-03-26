@@ -3,3 +3,9 @@
   flex-wrap: $wrap;
   justify-content: $justify;
 }
+
+@mixin hidden-sm() {
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
+}

@@ -1,0 +1,200 @@
+[{
+	"year": 2017,
+	"tag_line": "From Paris to South Korea and finishing in India.",
+	"sub_tag_line": "From web development to Yoga",
+	"professionnal_experiences": [
+		{
+			"company_name": "Expand Online",
+			"company_location": {
+				"lat": 51.924934,
+				"lng": 4.472743
+			},
+			"year": "2016",
+			"job_title": "SEA Consultant",
+			"company_logo": {
+				"url": "https://www.dcvacatures.nl/upload/93966-expand-online.jpg",
+				"size": [20, 20]
+			}
+		},
+			{
+				"company_name": "My Job Glasses",
+				"company_location": {
+					"lat": 48.8587741,
+					"lng": 2.2074741
+				},
+				"year": "2016",
+				"job_title": "Front Developper",
+				"company_logo": {
+					"url": "https://dlih64e6dz0wv.cloudfront.net/logo/mjg-logo-square-140x140.png",
+					"size": [20, 20]
+				}
+			}
+	]
+},
+
+	{
+	"year": 2016,
+	"tag_line": "A year to learn web development",
+	"sub_tag_line": "Focus on Javascript technologies: AngularJS, NodeJS, MongoDB, Angular2",
+	"tag_line": "From Paris to South Korea and finishing in India.",
+	"sub_tag_line": "From web development to Yoga",
+	"professionnal_experiences": [{
+		"company_name": "My Job Glasses",
+		"company_location": {
+			"lat": 48.8587741,
+			"lng": 2.2074741
+		},
+		"year": "2016",
+		"job_title": "Front Developper",
+		"company_logo": {
+			"url": "https://dlih64e6dz0wv.cloudfront.net/logo/mjg-logo-square-140x140.png",
+			"size": [20, 20]
+		}
+	}, {
+		"company_name": "heek",
+		"company_location": {
+			"lat": 48.6588377,
+			"lng": 2.2074741
+		},
+		"year": "2016",
+		"job_title": "Front Developper",
+		"company_logo": {
+			"url": "https://assets1.heek.com/images/ressources/heek-logo.svg",
+			"size": [20, 20]
+		}
+	}, {
+		"company_name": "Expand Online",
+		"company_location": {
+			"lat": 51.924934,
+			"lng": 4.472743
+		},
+		"year": "2016",
+		"job_title": "SEA Consultant",
+		"company_logo": {
+			"url": "https://www.dcvacatures.nl/upload/93966-expand-online.jpg",
+			"size": [20, 20]
+		}
+	}],
+	"education_experiences": [{
+		"university_name": "Wild Code School",
+		"university_location": {
+			"lat": 48.4735294,
+			"lng": 1.0098718
+		},
+		"year": "2016",
+		"job_title": "Marketing Trainee",
+		"university_logo": {
+			"url": "https://pbs.twimg.com/profile_images/697717251194150913/JaV7TAyN.jpg",
+			"size": [20, 20]
+		}
+	}]
+}, {
+	"year": 2015,
+	"tag_line": "Graduating from the EMBS program, Biking and learning in Internships",
+	"sub_tag_line": "Biking, Digital marketing, Online marketing",
+	"professionnal_experiences": [{
+		"company_name": "FlixBus",
+		"company_location": {
+			"lat": 48.142263,
+			"lng": 11.5468623
+		},
+		"year": "2015",
+		"job_title": "SEA Consultant",
+		"company_logo": {
+			"url": "https://media.glassdoor.com/sqll/976463/flixbus-squarelogo-1462375014197.png",
+			"size": [20, 20]
+		}
+	}, {
+		"company_name": "Source",
+		"company_location": {
+			"lat": 32.7699947,
+			"lng": 34.9696205
+		},
+		"year": "2015",
+		"job_title": "Marketing Trainee",
+		"company_logo": {
+			"url": "http://www.adventuregearpost.com/images/brands/source_logo.png",
+			"size": [20, 20]
+		}
+	}],
+	"education_experiences": [{
+		"university_name": "Universita di Trento",
+		"university_location": {
+			"lat": 46.0667967,
+			"lng": 11.1209278
+		},
+		"year": "2013-2015",
+		"studies_title": "EMBS European Master in Business Studies",
+		"university_logo": {
+			"url": "http://www.capodannotrento.com/cmsportal/common/cache/images/15.jpg",
+			"size": [20, 20]
+		}
+	}, {
+		"university_name": "IAE Annecy",
+		"university_location": {
+			"lat": 45.5667758,
+			"lng": 5.9154333
+		},
+		"year": "2013-2015",
+		"european_title": "EMBS European Master in Business Studies",
+		"university_logo": {
+			"url": "https://cas-uds.grenet.fr/images/logo_uds.gif",
+			"size": [20, 20]
+		}
+	}, {
+		"university_name": "Universidad de Leon",
+		"university_location": {
+			"lat": 42.6136017,
+			"lng": 5.5607068
+		},
+		"year": "2013-2015",
+		"european_title": "EMBS European Master in Business Studies",
+		"university_logo": {
+			"url": "http://www.actualidaduniversitaria.com/wp-content/uploads/2012/09/logo-ule.jpg",
+			"size": [20, 20]
+		}
+	}, {
+		"university_name": "Univesität Kassel",
+		"university_location": {
+			"lat": 51.3227527,
+			"lng": 9.5054058
+		},
+		"year": "2013-2015",
+		"european_title": "EMBS European Master in Marketing and Business Studies",
+		"university_logo": {
+			"url": "https://media.licdn.com/mpr/mpr/shrink_200_200/p/2/005/0a3/3f7/18ae48a.png",
+			"size": [20, 20]
+		}
+	}],
+	"comment": {
+	"year": 2013,
+	"tag_line": "Discovering a life abroad",
+	"sub_tag_line": "Graduating from a Scottish University and pursuing my academic life with the EMBS program",
+	"education_experiences": [{
+		"university_name": "Queen Margaret University",
+		"university_location": {
+			"lat": 55.9304617,
+			"lng": 3.0819352
+		},
+		"year": "2012-2013",
+		"european_title": "Bachelor in Business Management",
+		"university_logo": {
+			"url": "http://www.qmu.ac.uk/research_knowledge/media/66478/QMU%20Profile%20filler.jpg",
+			"size": [20, 20]
+		}
+	}, {
+		"university_name": "IUT Annecy",
+		"university_location": {
+			"lat": 45.920602,
+			"lng": 6.1511953
+		},
+		"year": "2012-2013",
+		"european_title": "DEUTO",
+		"university_logo": {
+			"url": "https://pbs.twimg.com/profile_images/685042206378438656/eF-zwx_r.jpg",
+			"size": [20, 20]
+		}
+	}]
+}
+}
+]

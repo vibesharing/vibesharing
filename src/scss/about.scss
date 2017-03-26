@@ -1,3 +1,8 @@
+@import 'mixins';
 .about{
   margin-top: 35px;
+}
+
+.hid-sm {
+  @include  hidden-sm();
 }

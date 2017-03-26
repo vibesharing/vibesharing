@@ -1,15 +1,235 @@
-<section>
-    <div class="container">
-        <div class="row about">
-            <div class="col-lg-8">
-                <h1>About</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<!--Main parallax wrapper-->
+<div class="parallax">
+
+    <!--First section-->
+    <div id="section-1" class="parallax-section">
+
+        <!--Parallax content-->
+        <div class="parallax-layer parallax-layer-base">
+
+            <!--Container to center the content-->
+            <div class="full-bg-img flex-center">
+                <ul>
+                    <li>
+                        <img src="img/hadrien.jpg" class="mx-auto d-block img-thumbnail" width="200px" height="200px" alt="hadrien buret">
+                    </li>
+                    <li>
+                        <h1 class="h1-responsive wow fadeInDown" data-wow-delay="0.2s">Curriculum vitae</h1></li>
+                    <li>
+                        <p class="wow fadeInDown" data-wow-delay="0.2s">Scroll down to see learn more about me</p>
+                    </li>
+                    <li>
+                        <a class="btn btn-outline-white btn-lg wow fadeInLeft" data-wow-delay="0.2s" ><i class="fa fa-github left"></i> Github</a>
+                        <a class="btn btn-outline-white btn-lg wow fadeInRight" data-wow-delay="0.2s"><i class="fa fa-linkedin left"></i> Linkedin</a>
+                    </li>
+                </ul>
             </div>
-            <div class="col-md-4 text-center card">
-                <div class="icon ui teal bg"><i class="fa fa-info"></i></div>
-                <h4>About developer</h4>
-                <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Integer a elit turpis. Phasellus non varius mi. Nam bibendum in mauris at sollicitudin lacinia.</p>
+            <!--/Container to center the content-->
+
+        </div>
+        <!--/Parallax content-->
+
+        <!--Parallax background-->
+        <div class="parallax-layer parallax-layer-back">
+        </div>
+        <!--/Parallax background-->
+
+    </div>
+    <!--/First section-->
+
+    <!--Dummy Content-->
+    <div id="section-2">
+        <div class="container text-center pt-1 mb-3">
+            <div class="col-md-6">
+                <div class="jumbotron" ng-repeat="year in $ctrl.years">
+                    <h1 class="h1-responsive">{{year.year}}</h1>
+                    <p class="lead">{{year.tag_line}}</p>
+                    <hr class="my-2">
+                    <p>{{year.sub_tag_line}}</p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Places</th>
+                                <th>Posision</th>
+                                <th class="hid-sm">Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="company in year.professionnal_experiences">
+                                <td>
+                                    <div class="chip">
+                                        <img ng-src="{{company.company_logo.url}}" alt="Contact Person"> <span style="font-size:8px">{{company.company_name}}</span>
+                                    </div>
+                                </td>
+                                <td>{{company.job_title}}</td>
+                                <td class="hid-sm">{{company.year}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
+            <div class="col-md-6">
+                <div class="col-md-12 text-center">
+                    <h1 class="mt-3 mb-3 h1-responsive">Places where I worked</h1>
+
+                <div class="" id="map" style="height: 300px; width: 100%;">
+
+                </div>
+            </div>
+
+                <div class="row">
+                    <div class="col-md-12 text-center">
+
+                        <h1 class="mt-3 mb-3 h1-responsive">Heading</h1>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum tempore laboriosam autem ratione adipisci dignissimos praesentium qui, repudiandae inventore, unde, officia at quam explicabo eveniet deserunt necessitatibus enim.
+                            Doloribus, inventore! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore accusamus perspiciatis debitis quia porro aliquid magnam illum consequatur quaerat culpa in voluptates, adipisci assumenda consectetur
+                            quibusdam consequuntur officia harum earum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum tempore laboriosam autem ratione adipisci dignissimos praesentium qui, repudiandae inventore, unde, officia at quam explicabo eveniet deserunt necessitatibus enim.
+                            Doloribus, inventore! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore accusamus perspiciatis debitis quia porro aliquid magnam illum consequatur quaerat culpa in voluptates, adipisci assumenda consectetur
+                            quibusdam consequuntur officia harum earum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum tempore laboriosam autem ratione adipisci dignissimos praesentium qui, repudiandae inventore, unde, officia at quam explicabo eveniet deserunt necessitatibus enim.
+                            Doloribus, inventore! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore accusamus perspiciatis debitis quia porro aliquid magnam illum consequatur quaerat culpa in voluptates, adipisci assumenda consectetur
+                            quibusdam consequuntur officia harum earum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum tempore laboriosam autem ratione adipisci dignissimos praesentium qui, repudiandae inventore, unde, officia at quam explicabo eveniet deserunt necessitatibus enim.
+                            Doloribus, inventore! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore accusamus perspiciatis debitis quia porro aliquid magnam illum consequatur quaerat culpa in voluptates, adipisci assumenda consectetur
+                            quibusdam consequuntur officia harum earum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum tempore laboriosam autem ratione adipisci dignissimos praesentium qui, repudiandae inventore, unde, officia at quam explicabo eveniet deserunt necessitatibus enim.
+                            Doloribus, inventore! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore accusamus perspiciatis debitis quia porro aliquid magnam illum consequatur quaerat culpa in voluptates, adipisci assumenda consectetur
+                            quibusdam consequuntur officia harum earum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum tempore laboriosam autem ratione adipisci dignissimos praesentium qui, repudiandae inventore, unde, officia at quam explicabo eveniet deserunt necessitatibus enim.
+                            Doloribus, inventore! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore accusamus perspiciatis debitis quia porro aliquid magnam illum consequatur quaerat culpa in voluptates, adipisci assumenda consectetur
+                            quibusdam consequuntur officia harum earum.</p>
+
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
-</section>
+    <!--Dummy Content-->
+
+</div>
+<!--/Main parallax wrapper-->
+<style media="screen">
+    footer {
+        display: none;
+    }
+    #section-1 {
+        z-index: 1;
+        color: #fff;
+        height: 100vh;
+    }
+
+    #section-1 .row {
+        position: fixed;
+    }
+    /*Parallax background*/
+
+    #section-1 .parallax-layer-back {
+        background: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(2).jpg")no-repeat center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    /*Section with dummy content*/
+
+    #section-2 {
+        z-index: 2;
+        position: relative;
+        background: #fff;
+        width: 100%;
+    }
+
+    .chip-map:before{
+  content : " ";
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #eceff1;
+  position:absolute;
+  bottom:6px;
+}
+</style>
+
+<style media="screen">
+    .info-box-wrap {
+  background:#fff;
+  overflow: hidden;
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.08);
+}
+.info-box-text-wrap {
+  height:40px !important;
+  width:120px;
+  float:left;
+  overflow: hidden;
+}
+.action-btns {
+  float:left;
+  width:70px;
+  overflow: hidden;
+  position: relative;
+  top:12px;
+  left: 6px;
+}
+.action-btns i {
+  font-size: 18px;
+  color: #78A737;
+  margin-left: 3px;
+}
+.action-btns i:hover {
+  transition: color 0.5s ease;
+  color:#ccc;
+  cursor: pointer;
+}
+.action-btns i.fa-heart-o {
+  font-weight: bold;
+}
+.info-box-text-wrap h6.address {
+  padding:6px 5px 1px 0;
+  margin:0 0 0 0;
+  font-family:"Roboto Slab";
+  color: #0c99c8;
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.info-box-text-wrap p {
+  padding:0 0 0 0;
+  margin:0 0 0 0;
+}
+.info-box-text-wrap p.price {
+  color:#B25B00;
+}
+
+.info-box-wrap  img {
+  width:40px !important;
+  height:40px;
+  float:left;
+  margin-right: 10px;
+  padding-top:0;
+  margin-top:0;
+}
+</style>
+<script type="text/javascript">
+    Waves.attach('.btn, .btn-floating', ['waves-light']);
+    Waves.attach('.waves-light', ['waves-light']);
+    Waves.attach('.navbar-nav a:not(.navbar-brand), .nav-icons li a, .navbar form, .nav-tabs .nav-item', ['waves-light']);
+    Waves.attach('.pager li a', ['waves-light']);
+    Waves.attach('.pagination .page-item .page-link', ['waves-effect']);
+
+
+wow = new WOW( {
+    boxClass:     'wow',
+    animateClass: 'animated',
+    }
+);
+
+wow.init();
+
+
+
+</script>

@@ -29,7 +29,7 @@
                     }).catch((err) =>{
                       console.log(err)
                     })
-                    FacebookService.getFeeds(0).then((res) => {
+                    FacebookService.getFeeds(9).then((res) => {
                         this.posts_a = [];
                         this.posts_b = [];
                         this.posts_c = [];

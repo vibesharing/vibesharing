@@ -509,7 +509,6 @@
     };
 
     return WOW;
-
   })();
-
+  console.log('wow')
 }).call(window);

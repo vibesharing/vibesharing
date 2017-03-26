@@ -69,6 +69,7 @@
 
 })(angular.module('app', [
     'ui.router',
+      'ngMap',
     'ngMeta',
     'ngCookies',
     'ngSanitize',
