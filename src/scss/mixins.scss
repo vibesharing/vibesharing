@@ -1,0 +1,11 @@
+@mixin flex-simple-wrap-justify ($wrap, $justify) {
+  display: flex;
+  flex-wrap: $wrap;
+  justify-content: $justify;
+}
+
+@mixin hidden-sm() {
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
+}

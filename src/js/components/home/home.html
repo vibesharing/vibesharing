@@ -8,6 +8,99 @@
         </div>
     </div>
     <div class="container">
+        <!--Carousel Wrapper-->
+        <!--Carousel Wrapper-->
+        <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+            <!--Controls-->
+            <div class="controls-top">
+                <a class="btn-floating btn-small" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+                <a class="btn-floating btn-small" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+            </div>
+            <!--/.Controls-->
+
+            <!--Indicators-->
+            <ol class="carousel-indicators">
+                <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+                <li data-target="#multi-item-example" data-slide-to="1"></li>
+                <li data-target="#multi-item-example" data-slide-to="2"></li>
+            </ol>
+            <!--/.Indicators-->
+
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+
+                <!--First slide-->
+                <div class="item active">
+                    <div class="col-md-4" ng-repeat="post in $ctrl.posts_a track by $index" ng-class="$first ? 'first-posts':'not-first-posts'">
+                        <div class="card">
+                            <img class="img-fluid post-img" ng-src="{{post.full_picture}}" alt="{{post.place.name}}">
+                            <div class="card-block">
+                                <h4 class="card-title post-title">{{post.place.name | cut:true:20:' ...'}}</h4>
+                                <p class="card-text post-message">{{post.message | cut:true:170:' ...'}}</p>
+                                <a href="{{post.link}}" target="blank" class="btn btn-primary">See on Facebook</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/.First slide-->
+
+                <!--Second slide-->
+                <div class="item">
+
+                    <div class="col-md-4" ng-repeat="post in $ctrl.posts_b track by $index" ng-class="$first ? 'first-posts':'not-first-posts'">
+                        <div class="card">
+                            <img class="img-fluid post-img" ng-src="{{post.full_picture}}" alt="{{post.place.name}}">
+                            <div class="card-block">
+                                <h4 class="card-title post-title">{{post.place.name | cut:true:20:' ...'}}</h4>
+                                <p class="card-text post-message">{{post.message | cut:true:170:' ...'}}</p>
+                                <a href="{{post.link}}" target="blank" class="btn btn-primary">See on Facebook</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/.Second slide-->
+
+                <!--Third slide-->
+                <div class="item">
+
+                    <div class="col-md-4" ng-repeat="post in $ctrl.posts_c track by $index" ng-class="$first ? 'first-posts':'not-first-posts'">
+                        <div class="card">
+                            <img class="img-fluid post-img" ng-src="{{post.full_picture}}" alt="{{post.place.name}}">
+                            <div class="card-block">
+                                <h4 class="card-title post-title">{{post.place.name | cut:true:20:' ...'}}</h4>
+                                <p class="card-text post-message">{{post.message | cut:true:170:' ...'}}</p>
+                                <a href="{{post.link}}" target="blank" class="btn btn-primary">See on Facebook</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/.Third slide-->
+            </div>
+            <!--/.Slides-->
+        </div>
+        <!--/.Carousel Wrapper-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <div class="mdb-lightbox">
+
+                        <figure class="col-md-2" ng-repeat="photo in $ctrl.instagram">
+                                <img ng-src="{{photo.images.thumbnail.url}}" height="130" width="130" class="img-fluid">
+                        </figure>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
         <div class="row concepts">
             <card class="col-sm-4" edit-mode="$ctrl.editMode" ng-model="$ctrl.page.content.concept1" />
             <card class="col-sm-4" edit-mode="$ctrl.editMode" ng-model="$ctrl.page.content.concept2" />
@@ -15,16 +108,24 @@
         </div>
         <hr />
         <div class="row">
-          <div class="col-sm-6">
-              <h3 inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable' : $ctrl.editMode}" ng-model="$ctrl.page.content.section1.title">{{$ctrl.page.section1.title}}</h3>
-              <p inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable' : $ctrl.editMode}" ng-model="$ctrl.page.content.section1.content">{{$ctrl.page.section1.content}}</p>
-          </div>
-          <div class="col-sm-6">
-            <img src="img/showcase.png" class="img-responsive" alt="">
-          </div>
+            <div class="col-sm-6">
+                <h3 inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable' : $ctrl.editMode}" ng-model="$ctrl.page.content.section1.title">{{$ctrl.page.section1.title}}</h3>
+                <p inline-text-editor edit-mode="{{$ctrl.editMode}}" ng-attr-contenteditable="{{$ctrl.editMode || undefined}}" ng-class="{'editable' : $ctrl.editMode}" ng-model="$ctrl.page.content.section1.content">{{$ctrl.page.section1.content}}</p>
+            </div>
+            <div class="col-sm-6">
+                <img src="img/showcase.png" class="img-responsive" alt="">
+            </div>
         </div>
         <button class="btn danger btn-floating cancel top" ng-if="$ctrl.editMode" ng-click="$ctrl.cancel()"><i class="fa fa-close"></i></button>
         <button class="btn success btn-floating top" ng-if="$ctrl.editMode" ng-click="$ctrl.save()"><i class="fa fa-check"></i></button>
         <button class="btn warning btn-floating top" ng-if="(!$ctrl.editMode && $ctrl.user && $ctrl.user.isAdmin)" ng-click="$ctrl.editMode = true"><i class="fa fa-pencil"></i></button>
     </div>
+    <script src="js/vendor.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(function() {
+                // $('.Carousel').carousel();
+            });
+        })
+    </script>
 </section>

@@ -3,14 +3,20 @@
 .navbar {
     background-color: $primary;
     border: none;
+    height: 60px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.navbar-header {
+  @media screen and (max-width: 400px){
+    margin-top: 5px;  
+  }
 }
 .navbar-nav{
   background-color: $primary;
   margin-top: -0px;
 }
 .navbar-nav > li > a {
-    color: $primary-blue !important;
+    color: $white !important;
     line-height: 30px;
 }
 
@@ -20,7 +26,7 @@
 }
 
 .navbar-nav > .selected > a {
-    border-bottom: 2px solid $primary-blue;
+    border-bottom: 2px solid $white;
 }
 
 .navbar-nav > li > a > img.circle {
@@ -31,20 +37,20 @@
 .navbar-default .navbar-toggle .icon-bar,
 button.navbar-default,
 button.navbar-toggle:hover {
-    background-color: $primary-blue !important;
+    background-color: $white !important;
 
 }
 
 button.navbar-default > .icon-bar,
 button.navbar-toggle:hover > .icon-bar {
-    background-color: $white !important;
+    background-color: $primary !important;
 }
 @media screen and (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-        color: $primary-blue;
+        color: $white;
     }
 }
 
 .navbar-default .navbar-toggle {
-    border-color: $primary-blue;
+    border-color: $white;
 }

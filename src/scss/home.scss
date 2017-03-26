@@ -1,4 +1,5 @@
 @import 'colors';
+@import 'mixins';
 
 /* intro */
 
@@ -21,4 +22,50 @@
 
 .concepts {
     margin-top: 20px;
+}
+
+.controls-top {
+  // display: none;
+}
+
+@media screen and (max-width: 640px) {
+  .first-posts {
+  }
+
+  .not-first-posts {
+    display: none;
+  }
+}
+.post-title {
+  padding: 10px 20px 0px 20px;;
+}
+
+.post-message {
+  padding: 20px;
+  max-height: 150px;
+}
+
+.mdb-lightbox {
+  max-height: 490px;
+  overflow: hidden;
+}
+
+/* footer */
+
+.socials {
+  ul {
+    @include flex-simple-wrap-justify(wrap, center);
+  }
+
+}
+.hds {
+  width: 150px;
+  @media screen and (max-width: 640px) {
+    display: none;
+  }
+}
+.hdsm {
+  @media screen and (min-width: 640px) {
+    display: none;
+  }
 }
