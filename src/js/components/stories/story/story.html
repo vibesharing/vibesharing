@@ -28,7 +28,9 @@
             <!--Text-->
             <p class="card-text">{{$ctrl.story.content.rendered | keep}}</p>
             <div class="text-center">
-                <a class="btn btn-primary">{{'READ_MORE' | translate}} </a>
+                <a class="btn btn-primary"
+                ng-click="$ctrl.fullvibe($ctrl.story)"
+                >{{'READ_MORE' | translate}} </a>
             </div>
         </div>
         <!--/.Card content-->

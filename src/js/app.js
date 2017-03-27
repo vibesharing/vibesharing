@@ -91,6 +91,7 @@
     'app.login',
     'app.home',
     'app.blog',
+    'app.vibe',
     'app.about',
     'app.stories',
     'app.dashboard',
