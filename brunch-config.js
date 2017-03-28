@@ -78,6 +78,7 @@ exports.config = {
             "css": ["bower_components/bootstrap/dist/css/bootstrap.min.css", "bower_components/bootstrap/dist/css/bootstrap.min.css.map", "bower_components/angular-inline-text-editor/ite.css"],
             "fonts": "bower_components/font-awesome/fonts",
             "fonts-families/roboto": ["src/font/roboto/"],
+            "fonts-families/icons": ["src/font/icons"],
             verbose: true,
             onlyChanged: true
         },

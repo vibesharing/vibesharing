@@ -4,6 +4,19 @@
           <story story="story" class="" />
         </div>
     </div>
+    <script type="text/javascript">
+    setTimeout(function(){
+        console.log('helo')
+        $('.card-share > a').on('click', function (e) {
+            console.log('hello');
+            e.preventDefault() // prevent default action - hash doesn't appear in url
+            $(this).parent().find('div').toggleClass('social-reveal-active');
+            $(this).toggleClass('share-expanded');
+        });
+    }, 4000);
+
+    </script>
+
 </section>
 
 <style media="screen">
@@ -17,6 +30,7 @@
     }
     .col-no-padding {
         padding: 0;
+         margin: 20px;
     }
 
     .btn-action-custom {
@@ -25,15 +39,3 @@
         margin: -23px 0px !important;
     }
 </style>
-<script type="text/javascript">
-setTimeout(function(){
-    console.log('helo')
-    $('.card-share > a').on('click', function (e) {
-        console.log('hello');
-        e.preventDefault() // prevent default action - hash doesn't appear in url
-        $(this).parent().find('div').toggleClass('social-reveal-active');
-        $(this).toggleClass('share-expanded');
-    });
-}, 4000);
-
-</script>

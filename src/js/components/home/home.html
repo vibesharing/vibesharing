@@ -13,18 +13,18 @@
         <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
 
             <!--Controls-->
-            <div class="controls-top">
+            <!-- <div class="controls-top">
                 <a class="btn-floating btn-small" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
                 <a class="btn-floating btn-small" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
-            </div>
+            </div> -->
             <!--/.Controls-->
 
             <!--Indicators-->
-            <ol class="carousel-indicators">
+            <!-- <ol class="carousel-indicators">
                 <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
                 <li data-target="#multi-item-example" data-slide-to="1"></li>
                 <li data-target="#multi-item-example" data-slide-to="2"></li>
-            </ol>
+            </ol> -->
             <!--/.Indicators-->
 
             <!--Slides-->
@@ -86,7 +86,6 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-
                     <div class="mdb-lightbox">
 
                         <figure class="col-md-2" ng-repeat="photo in $ctrl.instagram">
@@ -121,11 +120,5 @@
         <button class="btn warning btn-floating top" ng-if="(!$ctrl.editMode && $ctrl.user && $ctrl.user.isAdmin)" ng-click="$ctrl.editMode = true"><i class="fa fa-pencil"></i></button>
     </div>
     <script src="js/vendor.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $(function() {
-                // $('.Carousel').carousel();
-            });
-        })
-    </script>
+
 </section>

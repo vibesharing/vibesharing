@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+
+[data-icon]:before {
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.flatbox-container {
+  z-index: 2000;
+  width: 100%;
+  height: 100%;
+
+  display: table;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.flatbox-container.hidden {
+  display: none;
+}
+
+.flatbox-overlay {
+  width: 100%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  cursor: zoom-out;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.flatbox-slide {
+  max-height: 85%;
+  max-width: 80%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+
+  opacity: 0;
+  visibility: hidden;
+  cursor: default;
+  transition: visibility 0s linear .3s, opacity .3s, transform .3s;
+}
+
+.flatbox-prev-slide {
+  z-index: 10;
+  transform: translateX(-10%);
+}
+
+.flatbox-current-slide {
+  z-index: 20;
+  opacity: 1;
+
+  visibility: visible;
+  transition: visibility 0s linear 0s, opacity .3s, transform .3s;
+}
+
+.flatbox-next-slide {
+  z-index: 30;
+  transform: translateX(10%);
+}
+
+.flatbox-arrow {
+  font-size: 24px;
+
+  width: 30px;
+  height: 30px;
+
+  display: table-cell;
+  vertical-align: middle;
+
+  position: fixed;
+  top: calc(50% - 15px);
+  line-height: 35px;
+
+  color: #afafaf;
+
+  cursor: pointer;
+  z-index: 10;
+  transition: color .3s;
+}
+
+.flatbox-arrow:hover {
+  color: #ffffff;
+}
+
+.flatbox-prev {
+  left: 0;
+}
+
+.flatbox-next {
+  right: 0;
+}
+
+.flatbox-close {
+  width: 12px;
+  height: 30px;
+
+  font-size: 18px;
+
+  display: inline-block;
+  position: fixed;
+  line-height: 30px;
+
+  color: #afafaf;
+
+  z-index: 10;
+  cursor: pointer;
+  text-align: center;
+  transition: color .3s;
+}
+
+.flatbox-close:hover {
+  color: #ffffff;
+}
+
+@media screen and (max-width: 600px) {
+  .flatbox-arrow {
+    font-size: 18px;
+  }
+}
