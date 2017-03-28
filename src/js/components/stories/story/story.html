@@ -11,7 +11,14 @@
         <div class="card-share card-share-custom">
             <div class="social-reveal">
                 <!--Facebook-->
-                <a type="button" class="btn-floating btn-fb"><i class="fa fa-facebook"></i></a>
+                <a type="button" class="btn-floating btn-fb" socialshare
+                socialshare-provider="facebook"
+                socialshare-url="{{'http://www.vibesharing.com/#!/vibes/'+ $ctrl.story.id}}"
+                socialshare-text="{{'Read on Vibesharing.com | '+$ctrl.story.title.rendered}}"
+                social-share-media="{{$ctrl.story.better_featured_image.source_url}}"
+                >
+                    <i class="fa fa-facebook"></i>
+                </a>
                 <!--Twitter-->
                 <a type="button" class="btn-floating btn-tw"><i class="fa fa-twitter"></i></a>
                 <!--Google -->

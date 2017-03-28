@@ -10,7 +10,7 @@
                     ngMeta.setTitle('Vibe sharing | Stories');
                     ngMeta.setTag('author', 'Hadrien Buret');
                     ngMeta.setTag('description', 'Discover my stories about travelling in South-Korea with a bike');
-                    ngMeta.setTag('image', 'img/logo_vibesharing.png');
+                    ngMeta.setTag('image', 'http://www.vibesharing.com/img/logo_vibesharing.png');
 
                     if (!app.postList) {
                     WordpressService.getPostList().then((res)=>{

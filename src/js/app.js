@@ -78,6 +78,7 @@
     'ui.router',
     'ngMap',
     'angularMoment',
+    '720kb.socialshare',
     'ngMeta',
     'ngCookies',
     'ngSanitize',

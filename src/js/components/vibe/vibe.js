@@ -13,9 +13,7 @@
                     console.log($stateParams)
 
                     WordpressService.getPostById($stateParams.id).then((res)=> {
-                        console.log(res.data);
                         $( "#post-content" ).html($(res.data.content.rendered));
-                        // document.getElementById("post-content").appendChild(res.data.content.rendered)
                     })
 
                 }

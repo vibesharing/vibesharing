@@ -17,6 +17,7 @@
     "ngMeta": "^1.0.0",
     "ngmap": "^1.18.4",
     "moment": "^2.18.1",
-    "angular-moment": "^1.0.1"
+    "angular-moment": "^1.0.1",
+    "angular-socialshare": "angularjs-socialshare#^2.3.7"
   }
 }

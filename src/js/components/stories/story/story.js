@@ -5,8 +5,8 @@
           story: "<"
         },
         templateUrl: 'js/components/stories/story/story.html',
-        controller: ['ngMeta', 'JsonService', 'MapsService', '$http', 'WordpressService', '$state', 'moment', function(ngMeta, JsonService, MapsService, $http, WordpressService, $state, moment) {
-            angular.extend(this, {
+        controller: ['ngMeta', 'JsonService', 'MapsService', '$http', 'WordpressService', '$state', 'moment', 'Socialshare', function(ngMeta, JsonService, MapsService, $http, WordpressService, $state, moment, Socialshare) {
+        angular.extend(this, {
 
                 getMomentDate(){
                   return moment(this.date).format('DD-MM-YYYY')
