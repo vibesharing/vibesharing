@@ -5,15 +5,15 @@
         controller: ['ngMeta', 'JsonService', 'MapsService', '$http', 'WordpressService', '$stateParams', function(ngMeta, JsonService, MapsService, $http, WordpressService, $stateParams) {
             angular.extend(this, {
                 $onInit() {
-                    ngMeta.setTitle('Vibe sharing | Stories');
-                    ngMeta.setTag('author', 'Hadrien Buret');
-                    ngMeta.setTag('description', 'Discover my vibe about travelling in South-Korea with a bike');
-                    ngMeta.setTag('image', 'img/logo_vibesharing.png');
-                    console.log('vibe')
-                    console.log($stateParams)
-
                     WordpressService.getPostById($stateParams.id).then((res)=> {
+                        console.log(res.data);
                         $( "#post-content" ).html($(res.data.content.rendered));
+                        ngMeta.setTitle('Vibesharing |'+ res.data.title.rendered);
+                                ngMeta.setTag('author', 'Hadrien Buret');
+                                ngMeta.setTag('description', res.data.content.rendered.substring(0,121));
+                                ngMeta.setTag('type', 'website');
+                                ngMeta.setTag('image', res.data.better_featured_image.source_url);
+                                ngMeta.setTag('url', 'http://www.vibesharing.com/#!/vibes/'+res.data.id);
                     })
 
                 }

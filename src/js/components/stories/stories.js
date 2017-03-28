@@ -7,10 +7,12 @@
 
 
                 $onInit() {
-                    ngMeta.setTitle('Vibe sharing | Stories');
-                    ngMeta.setTag('author', 'Hadrien Buret');
-                    ngMeta.setTag('description', 'Discover my stories about travelling in South-Korea with a bike');
-                    ngMeta.setTag('image', 'http://www.vibesharing.com/img/logo_vibesharing.png');
+                  ngMeta.setTitle('Vibesharing | List my stories, my vibes, my experiences and tips that are usefull for future travelers ');
+                  ngMeta.setTag('author', 'Hadrien Buret');
+                  ngMeta.setTag('description', ' This is the list of all the stories and the vibes that happened during my bike tour in South-Korea and in Asia');
+                  ngMeta.setTag('type', 'website');
+                  ngMeta.setTag('image', 'http://blog.vibesharing.com/wp-content/uploads/2017/03/vibesharing_stories_page_meta.png');
+                  ngMeta.setTag('url', 'http://www.vibesharing.com/#!/stories');
 
                     if (!app.postList) {
                     WordpressService.getPostList().then((res)=>{

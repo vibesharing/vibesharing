@@ -12,7 +12,7 @@
                 save() {
                     PageService.save(angular.copy(this.page)).then(()=>{
                       toastr.success(`${this.page.name} saved`)
-                      this.editMode = false
+                      this.editMode = false;
                     }).catch((err)=>{
                       toastr.error(`${err.data}`)
                     })
@@ -23,11 +23,12 @@
                     }).catch((err) => {})
 
                     PageService.get('home').then((res) => {
-                      this.page = res.data
-                      if (this.page.content)
-                        this.page.content = JSON.parse(this.page.content)
+                      this.page = res.data;
+                      if (this.page.content){
+                        this.page.content = JSON.parse(this.page.content);
+                    }
                     }).catch((err) =>{
-                      console.log(err)
+                      console.log(err);
                     })
                     FacebookService.getFeeds(9).then((res) => {
                         this.posts_a = [];
@@ -44,27 +45,25 @@
                                 }
                             });
                         });
-                    })
+                    });
 
                     InstagramService.fetchPhotos().then((res)=> {
                         this.instagram = [];
                         res.data.data.forEach((el, index) => {
                             this.instagram.push(el);
-                        })
+                        });
 
-                    })
+                    });
 
                     // SlackService.postMessage('$general', 'helloworld')
-
-                    ngMeta.setTitle('Vibe sharing | Home');
+                    ngMeta.setTitle('Vibesharing | Travel for People and culture by bike on Budget');
                     ngMeta.setTag('author', 'Hadrien Buret');
-                    ngMeta.setTag('description', 'Homepage of vibesharing');
+                    ngMeta.setTag('description', 'Vibesharing is a travel blog where you will find articles, maps and other tips on how to travel in Asia and South-Korea by bike on a budget.');
                     ngMeta.setTag('type', 'website');
-                    ngMeta.setTag('image', 'http://www.vibesharing.com/img/logo_vibesharing.png');
+                    ngMeta.setTag('image', 'http://blog.vibesharing.com/wp-content/uploads/2017/03/vibesharing_home_page_meta.png');
                     ngMeta.setTag('url', 'http://www.vibesharing.com/#!');
-
                 }
-            })
+            });
         }]
-    })
+    });
 })(angular.module('app.home'))

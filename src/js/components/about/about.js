@@ -7,10 +7,15 @@
 
 
                 $onInit() {
-                    ngMeta.setTitle('Vibe sharing | About');
+                    ngMeta.setTitle('Vibesharing | My name is Hadrien I am the author of vibesharing');
                     ngMeta.setTag('author', 'Hadrien Buret');
-                    ngMeta.setTag('description', 'Hadrien Buret, Online Marketer and Junior web developper. Bike tourer and yoga apprentice lover');
-                    ngMeta.setTag('image', 'img/logo_vibesharing.png');
+                    ngMeta.setTag('description', 'Profile of Hadrien Buret. French guy, coming from the Alps, studied Marketing at the EMBS program and now learning web programming. Biking | travelling and yoga, ');
+                    ngMeta.setTag('type', 'profile');
+                    ngMeta.setTag('og:profile:first_name', 'hadrien');
+                    ngMeta.setTag('og:profile:last_name', 'Buret');
+                    ngMeta.setTag('og:profile:gender', 'male');
+                    ngMeta.setTag('image', 'http://blog.vibesharing.com/wp-content/uploads/2017/03/vibesharing_about_page_meta.png');
+                    ngMeta.setTag('url', 'http://www.vibesharing.com/#!/about');
 
 
                     JsonService.getCompaniesInfo().then((res) => {
