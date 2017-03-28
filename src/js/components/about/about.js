@@ -14,7 +14,7 @@
                     ngMeta.setTag('og:profile:first_name', 'hadrien');
                     ngMeta.setTag('og:profile:last_name', 'Buret');
                     ngMeta.setTag('og:profile:gender', 'male');
-                    ngMeta.setTag('image', 'http://blog.vibesharing.com/wp-content/uploads/2017/03/vibesharing_about_page_meta.png');
+                    ngMeta.setTag('image', 'https://s3.eu-central-1.amazonaws.com/vibesharing-static/vibesharing_about_page_meta.png');
                     ngMeta.setTag('url', 'http://www.vibesharing.com/#!/about');
 
 
