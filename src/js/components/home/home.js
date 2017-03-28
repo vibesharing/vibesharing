@@ -58,7 +58,11 @@
 
                     ngMeta.setTitle('Vibe sharing | Home');
                     ngMeta.setTag('author', 'Hadrien Buret');
+                    ngMeta.setTag('description', 'Homepage of vibesharing');
+                    ngMeta.setTag('type', 'website');
                     ngMeta.setTag('image', 'http://www.vibesharing.com/img/logo_vibesharing.png');
+                    ngMeta.setTag('url', 'http://www.vibesharing.com/#!');
+
                 }
             })
         }]
