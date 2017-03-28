@@ -26,7 +26,9 @@ exports.config = {
                     'bower_components/angular-translate/angular-translate.js',
                     'bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js',
                     'bower_components/ngMeta/dist/ngMeta.js',
-                    'bower_components/ngmap/build/scripts/ng-map.js'
+                    'bower_components/ngmap/build/scripts/ng-map.js',
+                    'bower_components/moment/moment.js',
+                    'bower_components/angular-moment/angular-moment.js'
                 ],
                 'js/app.min.js': /^src\/js/,
                 'js/components.js': /^src\/dist\/components/

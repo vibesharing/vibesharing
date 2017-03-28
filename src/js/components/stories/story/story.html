@@ -23,8 +23,13 @@
         <!--Card content-->
         <div class="card-block">
             <!--Title-->
-            <h4 class="card-title">{{$ctrl.story.title.rendered}}</h4>
-            <hr>
+            <div class="card-title-container">
+            <h4 class="card-title">{{$ctrl.story.title.rendered}} </h4>
+            <p class="card-title">
+                {{$ctrl.getMomentDate()}}
+            </p>
+            </div>
+            <hr class="hr-story-card">
             <!--Text-->
             <p class="card-text">{{$ctrl.story.content.rendered | keep}}</p>
             <div class="text-center">

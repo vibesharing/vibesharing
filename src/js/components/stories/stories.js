@@ -2,7 +2,7 @@
     'use strict'
     app.component("stories", {
         templateUrl: 'js/components/stories/stories.html',
-        controller: ['ngMeta', 'JsonService', 'MapsService', '$http', 'WordpressService', 'CacheService', '$state', function(ngMeta, JsonService, MapsService, $http, WordpressService, CacheService, $state) {
+        controller: ['ngMeta', 'JsonService', 'MapsService', '$http', 'WordpressService', 'CacheService', '$state','moment', function(ngMeta, JsonService, MapsService, $http, WordpressService, CacheService, $state, moment) {
             angular.extend(this, {
 
 

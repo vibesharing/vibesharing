@@ -76,7 +76,8 @@
 
 })(angular.module('app', [
     'ui.router',
-     'ngMap',
+    'ngMap',
+    'angularMoment',
     'ngMeta',
     'ngCookies',
     'ngSanitize',
