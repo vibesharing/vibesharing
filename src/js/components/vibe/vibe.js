@@ -31,7 +31,7 @@
                         ngMeta.setTag('description', res.data.content.rendered.substring(0,121));
                         ngMeta.setTag('og:type', 'article');
                         ngMeta.setTag('og:image', res.data.better_featured_image.source_url);
-                        ngMeta.setTag('url', 'http://www.vibesharing.com/#!/vibes/'+res.data.id);
+                        ngMeta.setTag('url', 'http://korea.vibesharing.com/#!/vibes/'+res.data.id);
                     })
 
                 }

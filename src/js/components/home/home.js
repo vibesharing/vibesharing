@@ -61,7 +61,7 @@
                     ngMeta.setTag('description', 'Vibesharing is a travel blog where you will find articles, maps and other tips on how to travel in Asia and South-Korea by bike on a budget.');
                     ngMeta.setTag('type', 'website');
                     ngMeta.setTag('image', 'https://s3.eu-central-1.amazonaws.com/vibesharing-static/vibesharing_home_page_meta.png');
-                    ngMeta.setTag('url', 'http://www.vibesharing.com/#!');
+                    ngMeta.setTag('url', 'http://korea.vibesharing.com/#!');
                 }
             });
         }]
