@@ -37,6 +37,12 @@
                         ngMeta.setTag('og:image:height',res.data.better_featured_image.media_details.height)
                         ngMeta.setTag('url', base_url.concat(res.data.id));
                     })
+                    ngMeta.setTitle('Vibesharing | Travel for People and culture by bike on Budget');
+                    ngMeta.setTag('author', 'Hadrien Buret');
+                    ngMeta.setTag('description', 'Vibesharing is a travel blog where you will find articles, maps and other tips on how to travel in Asia and South-Korea by bike on a budget.');
+                    ngMeta.setTag('type', 'website');
+                    ngMeta.setTag('image', 'https://s3.eu-central-1.amazonaws.com/vibesharing-static/vibesharing_home_page_meta.png');
+                    ngMeta.setTag('url', 'http://korea.vibesharing.com/#!');
 
                 }
             })
