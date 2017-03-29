@@ -34,7 +34,7 @@
                         ngMeta.setTag('image', res.data.better_featured_image.source_url);
                         ngMeta.setTag('og:image:width',res.data.better_featured_image.media_details.width);
                         ngMeta.setTag('og:image:height',res.data.better_featured_image.media_details.height)
-                        ngMeta.setTag('url', window.location.href);
+                        ngMeta.setTag('url', 'http://korea.vibesharing.com/#!/vibes/'+res.data.id);
                     })
 
                 }
