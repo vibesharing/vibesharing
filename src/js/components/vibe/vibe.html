@@ -12,10 +12,12 @@
           <span>{{'COMMON_SHARE_ON' | translate}} </span>  <a type="button" class="btn-floating btn-fb" socialshare
           socialshare-provider="facebook"
           socialshare-url="{{window.location.href}}"
+          socialshare-text="{{'Vibesharing |'+ $ctrl.vibe.title.rendered}}"
+          social-share-media="{{$ctrl.vibe.better_featured_image.source_url}}"
+          socialshare-description="$ctrl.vibe.content.rendered.substring(0,121)"
           >
               <i class="fa fa-facebook"></i>
           </a>
-
         </div>
       <div class="chip" ng-repeat="tag in $ctrl.tagsName">
         <span style="font-size:8px">{{tag}}</span>

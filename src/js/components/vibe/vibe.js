@@ -6,6 +6,7 @@
             angular.extend(this, {
                 $onInit() {
                     WordpressService.getPostById($stateParams.id).then((res)=> {
+                        this.vibe = res.data;
                         $( "#post-content" ).html($(res.data.content.rendered));
                         this.tagsName = [];
                         var lat;
