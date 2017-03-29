@@ -26,6 +26,7 @@
                                     this.tagsName.push(response.data.name)
                             });
                         })
+                        var base_url = "http://korea.vibesharing.com/#!/vibes/"
                         console.log(res.data.better_featured_image.source_url)
                         ngMeta.setTitle('Vibesharing |'+ res.data.title.rendered);
                         ngMeta.setTag('author', 'Hadrien Buret');
@@ -34,7 +35,7 @@
                         ngMeta.setTag('image', res.data.better_featured_image.source_url);
                         ngMeta.setTag('og:image:width',res.data.better_featured_image.media_details.width);
                         ngMeta.setTag('og:image:height',res.data.better_featured_image.media_details.height)
-                        ngMeta.setTag('url', 'http://korea.vibesharing.com/#!/vibes/'+res.data.id);
+                        ngMeta.setTag('url', base_url.concat(res.data.id));
                     })
 
                 }
