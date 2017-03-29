@@ -6,14 +6,32 @@
             angular.extend(this, {
                 $onInit() {
                     WordpressService.getPostById($stateParams.id).then((res)=> {
-                        console.log(res.data);
                         $( "#post-content" ).html($(res.data.content.rendered));
+                        this.tagsName = [];
+                        var lat;
+                        var lng;
+                        var coordinates;
+                        var indices = [];
+                        var string = res.data.content.rendered.substring(res.data.content.rendered.length - 45,res.data.content.rendered.length)
+                        for(var i=0;i<string.length;i++) {
+                            if (string[i] === "|") indices.push(i);
+                        }
+                        coordinates = string.substring(indices[0]+1, indices[1]).split(';');
+
+                        MapsService.createMapWithMarker(coordinates);
+
+                        res.data.tags.forEach((el)=> {
+                                WordpressService.getTagById(el).then((response) => {
+                                    this.tagsName.push(response.data.name)
+                            });
+                        })
+
                         ngMeta.setTitle('Vibesharing |'+ res.data.title.rendered);
-                                ngMeta.setTag('author', 'Hadrien Buret');
-                                ngMeta.setTag('description', res.data.content.rendered.substring(0,121));
-                                ngMeta.setTag('type', 'website');
-                                ngMeta.setTag('image', res.data.better_featured_image.source_url);
-                                ngMeta.setTag('url', 'http://www.vibesharing.com/#!/vibes/'+res.data.id);
+                        ngMeta.setTag('author', 'Hadrien Buret');
+                        ngMeta.setTag('description', res.data.content.rendered.substring(0,121));
+                        ngMeta.setTag('og:type', 'article');
+                        ngMeta.setTag('og:image', res.data.better_featured_image.source_url);
+                        ngMeta.setTag('url', 'http://www.vibesharing.com/#!/vibes/'+res.data.id);
                     })
 
                 }
