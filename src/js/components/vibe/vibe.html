@@ -8,6 +8,15 @@
 
     <div class="col-md-6">
         <hr>
+        <div class="socials">
+          <span>{{'COMMON_SHARE_ON' | translate}} </span>  <a type="button" class="btn-floating btn-fb" socialshare
+          socialshare-provider="facebook"
+          socialshare-url="{{window.location.href}}"
+          >
+              <i class="fa fa-facebook"></i>
+          </a>
+
+        </div>
       <div class="chip" ng-repeat="tag in $ctrl.tagsName">
         <span style="font-size:8px">{{tag}}</span>
       </div>

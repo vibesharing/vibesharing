@@ -16,5 +16,7 @@
   "COMMON_EMAIL": "Email",
   "COMMON_FIRSTNAME": "Prénom",
   "COMMON_LASTNAME": "Nom",
-  "COMMON_STORIES": "Histoires"
+  "COMMON_STORIES": "Histoires",
+  "COMMON_SHARE_ON": "Partagez sur"
+
 }
