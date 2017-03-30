@@ -14,6 +14,7 @@
             endpoint += this.$userId;
             endpoint += '/media/recent/?';
             endpoint += '?count=99';
+            endpoint +='&distance=500'
             endpoint += '&callback=JSON_CALLBACK';
             endpoint += '&access_token=' + this.$accessToken;
             return this.$http.jsonp(endpoint)

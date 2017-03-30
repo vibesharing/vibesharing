@@ -67,9 +67,13 @@
 
     app.filter("keep", function(){
         return function (value) {
-          var match = value.match(/<h1>(.*)<\/h1>/);
-          return match[1];
-            };
+            if(value) {
+                var match = value.match(/<h1>(.*)<\/h1>/);
+                return match[1];
+            } else {
+                return
+            }
+        };
     }),
 
     app.run()

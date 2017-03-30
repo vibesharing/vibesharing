@@ -7,6 +7,37 @@
             <a><div class="mask waves-effect waves-light"></div></a>
         </div>
         <!--/.Card image-->
+
+
+        <div class="card-share card-share-custom">
+              <div class="social-reveal">
+                  <!--Facebook-->
+                  <a type="button" class="btn-floating btn-fb"
+                  socialshare-provider="facebook"
+        socialshare-url="{{'http://korea.vibesharing.com/#!/vibe/' + $ctrl.story.id}}"
+        socialshare-text="{{'Vibesharing |'+ $ctrl.story.title.rendered}}"
+        social-share-media="{{$ctrl.story.better_featured_image.source_url}}"
+        socialshare-description="{{$ctrl.story.content.rendered | keep}}"
+        socialshare
+        socialshare-type="feed"
+        socialshare-via="937503726323366"
+        socialshare-caption="Discover a new story happening in South-Korea"
+        socialshare-redirect-uri="http://korea.vibesharing.com/#!"
+        socialshare-quote="Korea.vibesharing.com | Travel | bike | korea"
+        socialshare-hashtags="#vibesharing"
+        socialshare-popup-height="300"
+        socialshare-popup-width="400"
+        socialshare-trigger="click"
+                  >
+                      <i class="fa fa-facebook"></i>
+                  </a>
+                  <!--Twitter-->
+                  <a type="button" class="btn-floating btn-tw"><i class="fa fa-twitter"></i></a>
+                  <!--Google -->
+                  <a type="button" class="btn-floating btn-gplus"><i class="fa fa-google-plus"></i></a>
+              </div>
+              <a class="btn-floating btn-action share-toggle primary-color-dark float-right btn-action-custom"><i class="fa fa-share-alt"></i></a>
+          </div>
         <!--Social buttons-->
         <!--/Social buttons-->
         <!--Card content-->

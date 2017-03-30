@@ -8,24 +8,39 @@
 
     <div class="col-md-6">
         <hr>
-        <div class="socials">
-          <span>{{'COMMON_SHARE_ON' | translate}} </span>  <a type="button" class="btn-floating btn-fb" socialshare
-          socialshare-provider="facebook"
-          socialshare-url="{{window.location.href}}"
-          socialshare-text="{{'Vibesharing |'+ $ctrl.vibe.title.rendered}}"
-          social-share-media="{{$ctrl.vibe.better_featured_image.source_url}}"
-          socialshare-description="$ctrl.vibe.content.rendered.substring(0,121)"
-          >
-              <i class="fa fa-facebook"></i>
-          </a>
+        <div class="col-md-6 text-center">
+          <div class="socials">
+            <span>{{'COMMON_SHARE_ON' | translate}} </span>  <a type="button" class="btn-floating btn-fb" socialshare
+            socialshare-provider="facebook"
+            socialshare-url="{{'http://korea.vibesharing.com/#!/vibe/' + $ctrl.vibe.id}}"
+            socialshare-text="{{'Vibesharing |'+ $ctrl.vibe.title.rendered}}"
+            social-share-media="{{$ctrl.vibe.better_featured_image.source_url}}"
+            socialshare-description="{{$ctrl.vibe.content.rendered | keep}}"
+            socialshare
+            socialshare-type="feed"
+            socialshare-via="937503726323366"
+            socialshare-caption="Discover a new story happening in South-Korea"
+            socialshare-redirect-uri="http://korea.vibesharing.com/#!"
+            socialshare-quote="Korea.vibesharing.com | Travel | bike | korea"
+            socialshare-hashtags="#vibesharing"
+            socialshare-popup-height="300"
+            socialshare-popup-width="400"
+            socialshare-trigger="click"
+            >
+                <i class="fa fa-facebook"></i>
+            </a>
+          </div>
+          <div class="chip" ng-repeat="tag in $ctrl.tagsName">
+            <span style="font-size:8px">{{tag}}</span>
+          </div>
         </div>
-      <div class="chip" ng-repeat="tag in $ctrl.tagsName">
-        <span style="font-size:8px">{{tag}}</span>
-      </div>
-        <hr>
-      <div class="" id="map" style="height: 300px; width: 100%;">
 
+    <div class="col-md-6">
+        <img src="{{$ctrl.vibe.better_featured_image.source_url}}" width="100%" alt="$ctrl.vibe.title.rendered">
     </div>
+
+        <hr>
+      <div class="" id="map" style="height: 300px; width: 100%;"></div>
 
 
   </div>

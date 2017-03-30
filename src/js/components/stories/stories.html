@@ -1,5 +1,6 @@
 <section>
     <div class="container">
+      <h1>{{'STORIES_H1'|translate}}</h1>
         <div class="row" ng-repeat="story in $ctrl.stories">
           <story story="story" class="" />
         </div>
@@ -18,24 +19,3 @@
     </script>
 
 </section>
-
-<style media="screen">
-
-    .card-block {
-        padding: 10px;
-    }
-
-    .card-share-custom {
-        text-align: right;
-    }
-    .col-no-padding {
-        padding: 0;
-         margin: 20px;
-    }
-
-    .btn-action-custom {
-        top: -10px;
-        right: 15px;
-        margin: -23px 0px !important;
-    }
-</style>
