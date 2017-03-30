@@ -1,18 +1,18 @@
 @import 'colors';
 /* navbar */
 .navbar {
-    background-color: $primary;
+    background-color: $primary-blue;
     border: none;
     height: 60px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 .navbar-header {
   @media screen and (max-width: 400px){
-    margin-top: 5px;  
+    margin-top: 5px;
   }
 }
 .navbar-nav{
-  background-color: $primary;
+  background-color: $primary-blue;
   margin-top: -0px;
 }
 .navbar-nav > li > a {
@@ -43,7 +43,7 @@ button.navbar-toggle:hover {
 
 button.navbar-default > .icon-bar,
 button.navbar-toggle:hover > .icon-bar {
-    background-color: $primary !important;
+    background-color: $primary-blue !important;
 }
 @media screen and (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {

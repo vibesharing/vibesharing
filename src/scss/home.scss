@@ -4,18 +4,21 @@
 /* intro */
 
 .intro {
-    background-image: url('http://blog.vibesharing.com/wp-content/uploads/2017/03/korea_vibesharinghome_page.jpg');
-    background-position: bottom;
-    background-size: cover;
+    background: linear-gradient(to right, rgba(1,86,196, 0.8), rgba(255, 255, 255, 0)), url('http://blog.vibesharing.com/wp-content/uploads/2017/03/korea_vibesharinghome_page.jpg');
+    background-position: bottom, center;
+    background-size: cover, cover;
     min-height: 245px;
     margin-bottom: 10px;
+    height: 75vh;
 }
 .intro-title {
     margin-top: 25px;
-    color:$secondary;
+    color:$white;
+    font-weight: bold;
 }
 .subtitle{
-  color:$secondary;
+  color: $white;
+  font-weight: bold;
 }
 
 /* concepts */
@@ -46,7 +49,7 @@
 }
 
 .mdb-lightbox {
-  max-height: 490px;
+  max-height: 440px;
   overflow: hidden;
 }
 

@@ -4,13 +4,8 @@ app > .container {
     padding-bottom: 60px;
 }
 /* footer */
-.footer {
-    background-color: $primary;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
-    color: $white;
+.page-footer {
+    background-color: $primary-orange !important;
 }
 .footer > .container {
     padding: 15px;
